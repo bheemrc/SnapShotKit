@@ -308,7 +308,7 @@ struct ContentView: View {
                 .foregroundStyle(.secondary)
             Text("SnapShotKit")
                 .font(.largeTitle.bold())
-            VStack(spacing: 6) {
+            VStack(alignment: .leading, spacing: 8) {
                 instruction("1.", "Capture the full screen, a region, a window, or a tall scrolling area — or record the screen to MP4 or GIF.")
                 instruction("2.", "Annotate with arrows, shapes, highlights, text, blur/redact, and numbered steps, or auto-redact PII in one click.")
                 instruction("3.", "Pull out text with OCR, sample a color with the loupe, measure with the ruler, and scan QR/barcodes.")
@@ -316,6 +316,7 @@ struct ContentView: View {
             }
             .font(.callout)
             .foregroundStyle(.secondary)
+            .frame(maxWidth: 540)
         }
         .padding(40)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -323,8 +324,13 @@ struct ContentView: View {
 
     private func instruction(_ number: String, _ text: String) -> some View {
         HStack(alignment: .firstTextBaseline, spacing: 8) {
-            Text(number).monospacedDigit().fontWeight(.semibold)
+            Text(number)
+                .monospacedDigit()
+                .fontWeight(.semibold)
+                .frame(width: 22, alignment: .trailing)
             Text(text)
+                .fixedSize(horizontal: false, vertical: true)
+                .frame(maxWidth: .infinity, alignment: .leading)
         }
     }
 
