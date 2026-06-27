@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  SnapShotKit Info.plist
+  Note: Screen Recording is gated by macOS TCC at runtime. No plist key grants it;
+  the user must approve SnapShotKit under System Settings > Privacy & Security >
+  Screen Recording on first capture. (NSScreenCaptureUsageDescription is not a
+  recognized TCC key for screen recording, so none is required here.)
+-->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleIdentifier</key>
+    <string>com.snapshotkit.app</string>
+    <key>CFBundleName</key>
+    <string>SnapShotKit</string>
+    <key>CFBundleDisplayName</key>
+    <string>SnapShotKit</string>
+    <key>CFBundleExecutable</key>
+    <string>SnapShotKit</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>14.0</string>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>LSUIElement</key>
+    <false/>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+</dict>
+</plist>

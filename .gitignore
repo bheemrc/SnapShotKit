@@ -1,0 +1,19 @@
+# Swift Package Manager build output
+.build/
+
+# Built application bundles
+*.app
+
+# Distribution artifacts (DMGs, etc.) — attach to GitHub Releases instead
+dist/
+
+# macOS
+.DS_Store
+
+# Xcode
+DerivedData/
+*.xcuserstate
+.swiftpm/xcode
+
+# Pinned dependency graph (not tracked)
+Package.resolved
