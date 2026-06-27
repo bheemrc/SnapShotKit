@@ -7,6 +7,10 @@ up with arrows, shapes, text, highlights and redactions, and exporting them as
 polished images or multi-page PDFs. It's built entirely with Apple frameworks —
 no third-party dependencies, no telemetry, no cloud. Everything runs locally.
 
+<p align="center">
+  <img src="docs/app-window.png" alt="SnapShotKit — capture, annotate, and export screenshots natively on macOS" width="760">
+</p>
+
 ---
 
 ## Features
@@ -123,7 +127,13 @@ redaction, and export happen on your machine.
 
 ## Screenshots
 
-![SnapShotKit in action](docs/screenshot.png)
+**Menu-bar capture panel** — summon it from anywhere with **⌘⇧Space**. It floats over
+full-screen apps, so you can capture, record, annotate, and export without leaving
+whatever you're working on.
+
+<p align="center">
+  <img src="docs/menubar-panel.png" alt="SnapShotKit floating menu-bar capture panel" width="420">
+</p>
 
 ---
 
